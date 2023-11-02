@@ -1,0 +1,43 @@
+{
+    "name": "slvler/veriphone-validation",
+    "license": "MIT",
+    "description": "Phone number validation API for veriphone.io",
+    "type": "package",
+    "authors": [
+        {
+            "name": "slvler",
+            "email": "slvler@proton.me"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^6.18.0",
+        "phpunit/phpunit": "^9.5",
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slvler\\VeriphoneValidation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Slvler\\VeriphoneValidation\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Slvler\\VeriphoneValidation\\VeriphoneValidationServiceProvider"
+            ]
+        },
+        "aliases": {
+            "Theme": "Slvler\\VeriphoneValidation\\Facades\\VeriphoneValidation"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
