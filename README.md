@@ -1,6 +1,12 @@
 # slvler - Veriphone Service
 
 
+[![tests](https://github.com/slvler/veriphone-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/veriphone-service/actions/workflows/tests.yml)
+[![Latest Stable Version](http://poser.pugx.org/slvler/veriphone-validation/v)](https://packagist.org/packages/slvler/veriphone-validation) 
+[![Latest Unstable Version](http://poser.pugx.org/slvler/veriphone-validation/v/unstable)](https://packagist.org/packages/slvler/veriphone-validation) 
+[![License](http://poser.pugx.org/slvler/veriphone-validation/license)](https://packagist.org/packages/slvler/veriphone-validation) 
+
+
 This package provides a convenient wrapper to the [Veriphone API](https://veriphone.io/docs/v2)  for Laravel applications.
 
 Veriphone API is a REST based JSON API. It provides a set of stateless endpoints that any program or web browser can call by sending a standard HTTP request.
