@@ -19,7 +19,7 @@ This documentation describes these endpoints, their input/output parameters and 
 To install this package tou can use composer:
 
 ```bash
-    composer require slvler/xxxxxxxxxxxxxx
+    composer require slvler/veriphone-validation
 ```
 ## Usage
 
@@ -79,4 +79,4 @@ To install this package tou can use composer:
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/slvler/phone-validation/blob/main/README.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/slvler/veriphone-service/blob/main/LICENSE.md) for more information.
