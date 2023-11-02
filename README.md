@@ -41,7 +41,7 @@ To install this package tou can use composer:
 - Abstract's Phone Number Validation and Verification API simply requires your unique API key and the phone number you'd like to check:
 
 ```php
-    use slvler\PhoneValidation\Phone;
+    use Slvler\VeriphoneValidation\Facedes\VeriphoneValidation;
 
     VeriphoneValidation::get('14152007986');
 ```
