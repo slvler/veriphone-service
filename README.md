@@ -47,15 +47,6 @@ To install this package tou can use composer:
     php artisan vendor:publish --tag=veriphone
 ```
 
-- API key to be obtained from veriphone.io/docs/v2 address should be declared. This is your private API key, specific to this API.
-
-```php
-    'phone' => [
-        'base_url' => 'https://api.veriphone.io/',
-        'api_key' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    ]
-```
-
 - Abstract's Phone Number Validation and Verification API simply requires your unique API key and the phone number you'd like to check:
 
 ```php
