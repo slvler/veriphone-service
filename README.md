@@ -20,6 +20,9 @@ This documentation describes these endpoints, their input/output parameters and 
 - Laravel 9.x
 
 
+ 
+
+
 ## Installation
 
 To install this package tou can use composer:
@@ -29,7 +32,16 @@ To install this package tou can use composer:
 ```
 ## Usage
 
-- First, you should extract the config/veriphone.php file to the config folder.
+- First of all we'll add the API key and API Url of the service we're using to our .env file of our project. If you don't have an account yet on veriphone.io, you should create one. Once you have an account you can copy your API key from the dashboard page and put it into you .env file.
+
+
+```php
+    VERIPHONE_BASE_URL="https://api.veriphone.io/"
+    VERIPHONE_API_KEY="YOUR-API-KEY"
+```
+
+
+- you should extract the config/veriphone.php file to the config folder.
 
 ```php
     php artisan vendor:publish --tag=veriphone
