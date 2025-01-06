@@ -1,19 +1,31 @@
 {
     "name": "slvler/veriphone-validation",
-    "license": "MIT",
     "description": "Phone number validation API for veriphone.io",
-    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "veriphone",
+        "validation",
+        "phone",
+        "laravel",
+        "php"
+    ],
     "authors": [
         {
             "name": "slvler",
             "email": "slvler@proton.me"
         }
     ],
-    "require": {},
+    "homepage": "https://github.com/slvler/veriphone-service",
+    "require": {
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/support": "^9.0|^10.0|^11.0"
+    },
     "require-dev": {
-        "orchestra/testbench": "^6.18.0",
-        "phpunit/phpunit": "^9.5",
-        "guzzlehttp/guzzle": "^7.0.1"
+        "friendsofphp/php-cs-fixer": "^3.6",
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5.8",
+        "laravel/pint": "^1.18"
     },
     "autoload": {
         "psr-4": {
@@ -25,9 +37,6 @@
             "Slvler\\VeriphoneValidation\\Tests\\": "tests/"
         }
     },
-    "scripts": {
-        "test": "vendor/bin/phpunit tests"
-    },
     "extra": {
         "laravel": {
             "providers": [
@@ -37,6 +46,14 @@
         "aliases": {
             "Theme": "Slvler\\VeriphoneValidation\\Facades\\VeriphoneValidation"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests --colors=always",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "pint": "vendor/bin/pint",
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
     },
     "minimum-stability": "stable",
     "prefer-stable": true

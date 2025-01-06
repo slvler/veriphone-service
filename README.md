@@ -1,10 +1,11 @@
 # Veriphone Service
 
-[![tests](https://github.com/slvler/veriphone-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/veriphone-service/actions/workflows/tests.yml)
-[![Latest Stable Version](https://poser.pugx.org/slvler/veriphone-validation/v)](https://packagist.org/packages/slvler/veriphone-validation) 
-[![Latest Unstable Version](https://poser.pugx.org/slvler/veriphone-validation/v/unstable)](https://packagist.org/packages/slvler/veriphone-validation) 
+[![tests](https://github.com/slvler/etherscan-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/etherscan-service/actions/workflows/tests.yml)
+[![Latest Stable Version](https://img.shields.io/packagist/v/slvler/veriphone-validation.svg)](https://packagist.org/packages/slvler/veriphone-validation)
 [![License](https://poser.pugx.org/slvler/veriphone-validation/license)](https://packagist.org/packages/slvler/veriphone-validation)
 [![Total Downloads](https://poser.pugx.org/slvler/veriphone-validation/downloads)](https://packagist.org/packages/slvler/veriphone-validation)
+
+An api service for etherscan.io
 
 This package provides a convenient wrapper to the [Veriphone API](https://veriphone.io/docs/v2)  for Laravel applications.
 
@@ -12,8 +13,9 @@ Veriphone API is a REST based JSON API. It provides a set of stateless endpoints
 Veriphone will respond with a standard HTTP response carrying a JSON payload. 
 This documentation describes these endpoints, their input/output parameters and authentication methods.
 ## Requirements
-- PHP 8.0+
-- Laravel 9.x
+- PHP 8.2
+- Laravel 9.x | 10.x | 11.x
+
 ## Installation
 To install this package tou can use composer:
 ```bash
@@ -59,3 +61,10 @@ composer test
 - [slvler](https://github.com/slvler)
 ## License
 The MIT License (MIT). Please see [License File](https://github.com/slvler/veriphone-service/blob/main/LICENSE.md) for more information.
+
+## License
+The MIT License (MIT). Please see [License File](https://github.com/slvler/veriphone-service/blob/main/LICENSE.md) for more information.
+
+## Contributing
+You're very welcome to contribute.
+Please see [CONTRIBUTING](https://github.com/slvler/veriphone-service/blob/main/CONTRIBUTING.md) for details.
